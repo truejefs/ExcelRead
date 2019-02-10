@@ -12,7 +12,7 @@ from os.path import splitext
 START_ROW=1 # Assume row 0 (1 in excel) contains the header, so data starts ar row 1 (2 in excel)
 EmployeeID_column=0 # This is the column in which the employee IDs are listed in the excel spreadsheet.
 employeeID="Jack" # ID of the employee you wan to search for
-file_path="C:/Python_Scripts/ExcellRead/ExcellRead.xlsx" # Path to the excel file
+file_path="C:/Python_Scripts/ExcelRead/ExcelRead.xlsx" # Path to the excel file
 
 with open_workbook(file_path) as workbook_obj: # Set workbook_obj as the workbook object by opening the workbook (the with clause ensures the workbook will be closed when the script terminates)
     worksheet_obj = workbook_obj.sheet_by_index(0) # Set r-sheet as the first sheet object within the workbook_obj workbook.
